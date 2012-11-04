@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27410C3E1646347600A78604 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27410C3D1646347600A78604 /* UIKit.framework */; };
+		27410C401646347600A78604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27410C3F1646347600A78604 /* Foundation.framework */; };
+		27410C421646347600A78604 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27410C411646347600A78604 /* CoreGraphics.framework */; };
+		27410C481646347600A78604 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27410C461646347600A78604 /* InfoPlist.strings */; };
+		27410C4A1646347600A78604 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27410C491646347600A78604 /* main.m */; };
+		27410C4E1646347600A78604 /* ROOFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27410C4D1646347600A78604 /* ROOFAppDelegate.m */; };
+		27410C501646347600A78604 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 27410C4F1646347600A78604 /* Default.png */; };
+		27410C521646347600A78604 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27410C511646347600A78604 /* Default@2x.png */; };
+		27410C541646347600A78604 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27410C531646347600A78604 /* Default-568h@2x.png */; };
+		27410C571646347600A78604 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27410C551646347600A78604 /* MainStoryboard.storyboard */; };
+		27410C5A1646347600A78604 /* ROOFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27410C591646347600A78604 /* ROOFViewController.m */; };
+		27410C621646347600A78604 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27410C611646347600A78604 /* SenTestingKit.framework */; };
+		27410C631646347600A78604 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27410C3D1646347600A78604 /* UIKit.framework */; };
+		27410C641646347600A78604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27410C3F1646347600A78604 /* Foundation.framework */; };
+		27410C6C1646347600A78604 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27410C6A1646347600A78604 /* InfoPlist.strings */; };
+		27410C6F1646347600A78604 /* Simon_Part_DeuxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27410C6E1646347600A78604 /* Simon_Part_DeuxTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27410C651646347600A78604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27410C301646347600A78604 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27410C381646347600A78604;
+			remoteInfo = "Simon Part Deux";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27410C391646347600A78604 /* Simon Part Deux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simon Part Deux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27410C3D1646347600A78604 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27410C3F1646347600A78604 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27410C411646347600A78604 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27410C451646347600A78604 /* Simon Part Deux-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simon Part Deux-Info.plist"; sourceTree = "<group>"; };
+		27410C471646347600A78604 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27410C491646347600A78604 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27410C4B1646347600A78604 /* Simon Part Deux-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simon Part Deux-Prefix.pch"; sourceTree = "<group>"; };
+		27410C4C1646347600A78604 /* ROOFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROOFAppDelegate.h; sourceTree = "<group>"; };
+		27410C4D1646347600A78604 /* ROOFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROOFAppDelegate.m; sourceTree = "<group>"; };
+		27410C4F1646347600A78604 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		27410C511646347600A78604 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		27410C531646347600A78604 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		27410C561646347600A78604 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		27410C581646347600A78604 /* ROOFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROOFViewController.h; sourceTree = "<group>"; };
+		27410C591646347600A78604 /* ROOFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROOFViewController.m; sourceTree = "<group>"; };
+		27410C601646347600A78604 /* Simon Part DeuxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simon Part DeuxTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27410C611646347600A78604 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		27410C691646347600A78604 /* Simon Part DeuxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simon Part DeuxTests-Info.plist"; sourceTree = "<group>"; };
+		27410C6B1646347600A78604 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27410C6D1646347600A78604 /* Simon_Part_DeuxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simon_Part_DeuxTests.h; sourceTree = "<group>"; };
+		27410C6E1646347600A78604 /* Simon_Part_DeuxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simon_Part_DeuxTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27410C361646347600A78604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27410C3E1646347600A78604 /* UIKit.framework in Frameworks */,
+				27410C401646347600A78604 /* Foundation.framework in Frameworks */,
+				27410C421646347600A78604 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27410C5C1646347600A78604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27410C621646347600A78604 /* SenTestingKit.framework in Frameworks */,
+				27410C631646347600A78604 /* UIKit.framework in Frameworks */,
+				27410C641646347600A78604 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27410C2E1646347600A78604 = {
+			isa = PBXGroup;
+			children = (
+				27410C431646347600A78604 /* Simon Part Deux */,
+				27410C671646347600A78604 /* Simon Part DeuxTests */,
+				27410C3C1646347600A78604 /* Frameworks */,
+				27410C3A1646347600A78604 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27410C3A1646347600A78604 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27410C391646347600A78604 /* Simon Part Deux.app */,
+				27410C601646347600A78604 /* Simon Part DeuxTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27410C3C1646347600A78604 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27410C3D1646347600A78604 /* UIKit.framework */,
+				27410C3F1646347600A78604 /* Foundation.framework */,
+				27410C411646347600A78604 /* CoreGraphics.framework */,
+				27410C611646347600A78604 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27410C431646347600A78604 /* Simon Part Deux */ = {
+			isa = PBXGroup;
+			children = (
+				27410C4C1646347600A78604 /* ROOFAppDelegate.h */,
+				27410C4D1646347600A78604 /* ROOFAppDelegate.m */,
+				27410C551646347600A78604 /* MainStoryboard.storyboard */,
+				27410C581646347600A78604 /* ROOFViewController.h */,
+				27410C591646347600A78604 /* ROOFViewController.m */,
+				27410C441646347600A78604 /* Supporting Files */,
+			);
+			path = "Simon Part Deux";
+			sourceTree = "<group>";
+		};
+		27410C441646347600A78604 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27410C451646347600A78604 /* Simon Part Deux-Info.plist */,
+				27410C461646347600A78604 /* InfoPlist.strings */,
+				27410C491646347600A78604 /* main.m */,
+				27410C4B1646347600A78604 /* Simon Part Deux-Prefix.pch */,
+				27410C4F1646347600A78604 /* Default.png */,
+				27410C511646347600A78604 /* Default@2x.png */,
+				27410C531646347600A78604 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27410C671646347600A78604 /* Simon Part DeuxTests */ = {
+			isa = PBXGroup;
+			children = (
+				27410C6D1646347600A78604 /* Simon_Part_DeuxTests.h */,
+				27410C6E1646347600A78604 /* Simon_Part_DeuxTests.m */,
+				27410C681646347600A78604 /* Supporting Files */,
+			);
+			path = "Simon Part DeuxTests";
+			sourceTree = "<group>";
+		};
+		27410C681646347600A78604 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27410C691646347600A78604 /* Simon Part DeuxTests-Info.plist */,
+				27410C6A1646347600A78604 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27410C381646347600A78604 /* Simon Part Deux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27410C721646347600A78604 /* Build configuration list for PBXNativeTarget "Simon Part Deux" */;
+			buildPhases = (
+				27410C351646347600A78604 /* Sources */,
+				27410C361646347600A78604 /* Frameworks */,
+				27410C371646347600A78604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simon Part Deux";
+			productName = "Simon Part Deux";
+			productReference = 27410C391646347600A78604 /* Simon Part Deux.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27410C5F1646347600A78604 /* Simon Part DeuxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27410C751646347600A78604 /* Build configuration list for PBXNativeTarget "Simon Part DeuxTests" */;
+			buildPhases = (
+				27410C5B1646347600A78604 /* Sources */,
+				27410C5C1646347600A78604 /* Frameworks */,
+				27410C5D1646347600A78604 /* Resources */,
+				27410C5E1646347600A78604 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27410C661646347600A78604 /* PBXTargetDependency */,
+			);
+			name = "Simon Part DeuxTests";
+			productName = "Simon Part DeuxTests";
+			productReference = 27410C601646347600A78604 /* Simon Part DeuxTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27410C301646347600A78604 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ROOF;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Mike Roof";
+			};
+			buildConfigurationList = 27410C331646347600A78604 /* Build configuration list for PBXProject "Simon Part Deux" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27410C2E1646347600A78604;
+			productRefGroup = 27410C3A1646347600A78604 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27410C381646347600A78604 /* Simon Part Deux */,
+				27410C5F1646347600A78604 /* Simon Part DeuxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27410C371646347600A78604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27410C481646347600A78604 /* InfoPlist.strings in Resources */,
+				27410C501646347600A78604 /* Default.png in Resources */,
+				27410C521646347600A78604 /* Default@2x.png in Resources */,
+				27410C541646347600A78604 /* Default-568h@2x.png in Resources */,
+				27410C571646347600A78604 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27410C5D1646347600A78604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27410C6C1646347600A78604 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27410C5E1646347600A78604 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27410C351646347600A78604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27410C4A1646347600A78604 /* main.m in Sources */,
+				27410C4E1646347600A78604 /* ROOFAppDelegate.m in Sources */,
+				27410C5A1646347600A78604 /* ROOFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27410C5B1646347600A78604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27410C6F1646347600A78604 /* Simon_Part_DeuxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27410C661646347600A78604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27410C381646347600A78604 /* Simon Part Deux */;
+			targetProxy = 27410C651646347600A78604 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27410C461646347600A78604 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27410C471646347600A78604 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27410C551646347600A78604 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27410C561646347600A78604 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		27410C6A1646347600A78604 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27410C6B1646347600A78604 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27410C701646347600A78604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		27410C711646347600A78604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27410C731646347600A78604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simon Part Deux/Simon Part Deux-Prefix.pch";
+				INFOPLIST_FILE = "Simon Part Deux/Simon Part Deux-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		27410C741646347600A78604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simon Part Deux/Simon Part Deux-Prefix.pch";
+				INFOPLIST_FILE = "Simon Part Deux/Simon Part Deux-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		27410C761646347600A78604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Simon Part Deux.app/Simon Part Deux";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simon Part Deux/Simon Part Deux-Prefix.pch";
+				INFOPLIST_FILE = "Simon Part DeuxTests/Simon Part DeuxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		27410C771646347600A78604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Simon Part Deux.app/Simon Part Deux";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simon Part Deux/Simon Part Deux-Prefix.pch";
+				INFOPLIST_FILE = "Simon Part DeuxTests/Simon Part DeuxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27410C331646347600A78604 /* Build configuration list for PBXProject "Simon Part Deux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27410C701646347600A78604 /* Debug */,
+				27410C711646347600A78604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27410C721646347600A78604 /* Build configuration list for PBXNativeTarget "Simon Part Deux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27410C731646347600A78604 /* Debug */,
+				27410C741646347600A78604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27410C751646347600A78604 /* Build configuration list for PBXNativeTarget "Simon Part DeuxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27410C761646347600A78604 /* Debug */,
+				27410C771646347600A78604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27410C301646347600A78604 /* Project object */;
+}
