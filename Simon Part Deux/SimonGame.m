@@ -15,10 +15,36 @@
 @synthesize round_number;
 @synthesize sounds_played;
 @synthesize human_buttons_hit;
+@synthesize yellowSound;
+@synthesize redSound;
+@synthesize blueSound;
+@synthesize greenSound;
+@synthesize sounds;
+
 -(void)startNewGame {
     NSLog(@"Game Begun!");
+    [self initializeGameValues];
     [self setRound_number:0];
     [self beginRound];
+}
+-(void)initializeGameValues {
+
+	NSString *yellowSoundPath = [[NSBundle mainBundle] pathForResource:@"yellowBeep" ofType:@"aif" inDirectory:@"simon_sounds"];
+	NSURL *yellowSoundURL = [NSURL fileURLWithPath:yellowSoundPath];
+    AudioServicesCreateSystemSoundID ((__bridge CFURLRef)yellowSoundURL, &yellowSound);
+    
+    NSString *redSoundPath = [[NSBundle mainBundle] pathForResource:@"redBeep" ofType:@"aif" inDirectory:@"simon_sounds"];
+	NSURL *redSoundURL = [NSURL fileURLWithPath:redSoundPath];
+    AudioServicesCreateSystemSoundID ((__bridge CFURLRef)redSoundURL, &redSound);
+    
+    NSString *greenSoundPath = [[NSBundle mainBundle] pathForResource:@"greenBeep" ofType:@"aif" inDirectory:@"simon_sounds"];
+	NSURL *greenSoundURL = [NSURL fileURLWithPath:greenSoundPath];
+    AudioServicesCreateSystemSoundID ((__bridge CFURLRef)greenSoundURL, &greenSound);
+    
+    NSString *blueSoundPath = [[NSBundle mainBundle] pathForResource:@"blueBeep" ofType:@"aif" inDirectory:@"simon_sounds"];
+	NSURL *blueSoundURL = [NSURL fileURLWithPath:blueSoundPath];
+    AudioServicesCreateSystemSoundID ((__bridge CFURLRef)blueSoundURL, &blueSound);
+   
 }
 -(BOOL)isGameOver {
     //TODO: Add logic for this later
@@ -27,35 +53,14 @@
 }
 -(void)beginRound{
     //TODO: actual gameplay
-    if([self isComputerTurn:round_number]) {
-        [self addMoveToComputerPattern];
-        [self playComputerTurn];
-    }
-    else{
-        [self playHumanTurn];
-    }
-    
-    
-    if([self isGameOver]) {
-        [self showGameOverView];
-    }
+    [self addMoveToComputerPattern];
+    [self playComputerTurn];
+  
 }
 -(void)addMoveToComputerPattern {
     srand([[NSDate date] timeIntervalSince1970]);
 	int random_num = rand() % 4;
     [cpu_move_history addObject:[NSNumber numberWithInt: random_num]];
-}
--(BOOL)isComputerTurn: (int)round_num {
-    if(round_num % 2 == 0 || round_num == 0) {
-        self.computer_turn = true;
-        self.human_turn = false;
-        return true;
-    }
-    else{
-        self.computer_turn = false;
-        self.human_turn = true;
-        return false;
-    }
 }
 -(void)playComputerTurn {
     int non_zero_round_num = round_number + 1;
@@ -70,14 +75,39 @@
         [self performSelector:@selector(playComputerTurn) withObject:nil afterDelay:.5];
 	}
 }
-
+-(void)playSound:(int)color {
+    switch(color){
+        case 1:
+            AudioServicesPlaySystemSound(redSound);
+            break;
+        case 2:
+            AudioServicesPlaySystemSound(blueSound);
+            break;
+        case 3:
+            AudioServicesPlaySystemSound(greenSound);
+            break;
+        case 4:
+            AudioServicesPlaySystemSound(yellowSound);
+            break;
+        default:
+            break;
+    }
+    
+}
 -(void)gameButtonPressed: (NSString*)color {
     NSLog(@"%@", color);
+   
     int color_int = [self mapColorStringToInt:color];
+    [self playSound:color_int];
     //check if button hit matches button in cpu history
     if(color_int == (int)cpu_move_history[human_buttons_hit]) {
         human_buttons_hit++;
-        //if at end of cpu array, do computer turn
+
+        if(human_buttons_hit == [cpu_move_history count]) {
+            //if at end of cpu array, next round
+            round_number++;
+            [self beginRound];
+        }
     }
     else{
         //if not, game over

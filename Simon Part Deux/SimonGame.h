@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 #import "ROOFAppDelegate.h"
 #import "SimonViewController.h"
 #import "GameOverViewController.h"
@@ -22,14 +23,16 @@
 @property int human_buttons_hit;
 @property NSMutableArray *cpu_move_history;
 @property NSMutableArray *human_move_history;
-
+@property SystemSoundID yellowSound;
+@property SystemSoundID redSound;
+@property SystemSoundID blueSound;
+@property SystemSoundID greenSound;
+@property NSMutableArray *sounds;
 -(void)gameButtonPressed: (NSString *)color;
 -(id)initWithViewController: (SimonViewController*)vc;
--(BOOL)isComputerTurn: (int)round_number;
 -(void)startNewGame;
 -(void)beginRound;
 -(BOOL)isGameOver;
 -(void)playComputerTurn;
--(void)playHumanTurn;
 
 @end

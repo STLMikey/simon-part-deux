@@ -40,7 +40,7 @@ BOOL allowClicks = YES;
 	
 	NSString *yellowSoundPath = [[NSBundle mainBundle] pathForResource:@"yellowBeep" ofType:@"aif"];
 	NSURL *yellowSoundURL = [NSURL fileURLWithPath:yellowSoundPath];
-	AudioServicesCreateSystemSoundID ((CFURLRef)yellowSoundURL, &yellowSound);
+	OSSAudioServicesCreateSystemSoundID ((CFURLRef)yellowSoundURL, &yellowSound);
 	
 	NSString *redSoundPath = [[NSBundle mainBundle] pathForResource:@"redBeep" ofType:@"aif"];
 	NSURL *redSoundURL = [NSURL fileURLWithPath:redSoundPath];

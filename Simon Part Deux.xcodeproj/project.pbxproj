@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270174E61659FF2700C9329D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270174E51659FF2700C9329D /* AudioToolbox.framework */; };
+		270174EC165A049300C9329D /* simon_sounds in Resources */ = {isa = PBXBuildFile; fileRef = 270174EB165A049300C9329D /* simon_sounds */; };
 		27410C3E1646347600A78604 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27410C3D1646347600A78604 /* UIKit.framework */; };
 		27410C401646347600A78604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27410C3F1646347600A78604 /* Foundation.framework */; };
 		27410C421646347600A78604 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27410C411646347600A78604 /* CoreGraphics.framework */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270174E51659FF2700C9329D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		270174EB165A049300C9329D /* simon_sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = simon_sounds; sourceTree = "<group>"; };
 		27410C391646347600A78604 /* Simon Part Deux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simon Part Deux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27410C3D1646347600A78604 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27410C3F1646347600A78604 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270174E61659FF2700C9329D /* AudioToolbox.framework in Frameworks */,
 				27410C3E1646347600A78604 /* UIKit.framework in Frameworks */,
 				27410C401646347600A78604 /* Foundation.framework in Frameworks */,
 				27410C421646347600A78604 /* CoreGraphics.framework in Frameworks */,
@@ -102,6 +107,7 @@
 		27410C2E1646347600A78604 = {
 			isa = PBXGroup;
 			children = (
+				270174EB165A049300C9329D /* simon_sounds */,
 				27410C431646347600A78604 /* Simon Part Deux */,
 				27410C671646347600A78604 /* Simon Part DeuxTests */,
 				27410C3C1646347600A78604 /* Frameworks */,
@@ -121,6 +127,7 @@
 		27410C3C1646347600A78604 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				270174E51659FF2700C9329D /* AudioToolbox.framework */,
 				27410C3D1646347600A78604 /* UIKit.framework */,
 				27410C3F1646347600A78604 /* Foundation.framework */,
 				27410C411646347600A78604 /* CoreGraphics.framework */,
@@ -279,6 +286,7 @@
 				27410C521646347600A78604 /* Default@2x.png in Resources */,
 				27410C541646347600A78604 /* Default-568h@2x.png in Resources */,
 				27410C571646347600A78604 /* MainStoryboard.storyboard in Resources */,
+				270174EC165A049300C9329D /* simon_sounds in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
