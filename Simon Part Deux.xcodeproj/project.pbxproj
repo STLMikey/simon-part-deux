@@ -23,6 +23,11 @@
 		27410C641646347600A78604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27410C3F1646347600A78604 /* Foundation.framework */; };
 		27410C6C1646347600A78604 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27410C6A1646347600A78604 /* InfoPlist.strings */; };
 		27410C6F1646347600A78604 /* Simon_Part_DeuxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27410C6E1646347600A78604 /* Simon_Part_DeuxTests.m */; };
+		27F660471659AE49004262A0 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F660461659AE49004262A0 /* SplashViewController.m */; };
+		27F6604B1659B039004262A0 /* GameFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F6604A1659B039004262A0 /* GameFactory.m */; };
+		27F6604F1659B11B004262A0 /* SimonGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F6604E1659B11B004262A0 /* SimonGame.m */; };
+		27F660521659B33D004262A0 /* SimonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F660511659B33D004262A0 /* SimonViewController.m */; };
+		27F660561659BE62004262A0 /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F660551659BE62004262A0 /* GameOverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,16 @@
 		27410C6B1646347600A78604 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27410C6D1646347600A78604 /* Simon_Part_DeuxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simon_Part_DeuxTests.h; sourceTree = "<group>"; };
 		27410C6E1646347600A78604 /* Simon_Part_DeuxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simon_Part_DeuxTests.m; sourceTree = "<group>"; };
+		27F660451659AE49004262A0 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		27F660461659AE49004262A0 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		27F660491659B039004262A0 /* GameFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameFactory.h; path = "Simon Part Deux/GameFactory.h"; sourceTree = "<group>"; };
+		27F6604A1659B039004262A0 /* GameFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameFactory.m; path = "Simon Part Deux/GameFactory.m"; sourceTree = "<group>"; };
+		27F6604D1659B11B004262A0 /* SimonGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimonGame.h; path = "Simon Part Deux/SimonGame.h"; sourceTree = "<group>"; };
+		27F6604E1659B11B004262A0 /* SimonGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimonGame.m; path = "Simon Part Deux/SimonGame.m"; sourceTree = "<group>"; };
+		27F660501659B33D004262A0 /* SimonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimonViewController.h; sourceTree = "<group>"; };
+		27F660511659B33D004262A0 /* SimonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimonViewController.m; sourceTree = "<group>"; };
+		27F660541659BE62004262A0 /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverViewController.h; path = ../GameOverViewController.h; sourceTree = "<group>"; };
+		27F660551659BE62004262A0 /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOverViewController.m; path = ../GameOverViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +132,11 @@
 		27410C431646347600A78604 /* Simon Part Deux */ = {
 			isa = PBXGroup;
 			children = (
+				27410C551646347600A78604 /* MainStoryboard.storyboard */,
 				27410C4C1646347600A78604 /* ROOFAppDelegate.h */,
 				27410C4D1646347600A78604 /* ROOFAppDelegate.m */,
-				27410C551646347600A78604 /* MainStoryboard.storyboard */,
-				27410C581646347600A78604 /* ROOFViewController.h */,
-				27410C591646347600A78604 /* ROOFViewController.m */,
+				27F6604C1659B03F004262A0 /* Classes */,
+				27F660531659B359004262A0 /* ViewControllers */,
 				27410C441646347600A78604 /* Supporting Files */,
 			);
 			path = "Simon Part Deux";
@@ -158,6 +173,33 @@
 				27410C6A1646347600A78604 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27F6604C1659B03F004262A0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				27F6604D1659B11B004262A0 /* SimonGame.h */,
+				27F6604E1659B11B004262A0 /* SimonGame.m */,
+				27F660491659B039004262A0 /* GameFactory.h */,
+				27F6604A1659B039004262A0 /* GameFactory.m */,
+			);
+			name = Classes;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		27F660531659B359004262A0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				27F660541659BE62004262A0 /* GameOverViewController.h */,
+				27F660551659BE62004262A0 /* GameOverViewController.m */,
+				27F660501659B33D004262A0 /* SimonViewController.h */,
+				27F660511659B33D004262A0 /* SimonViewController.m */,
+				27F660451659AE49004262A0 /* SplashViewController.h */,
+				27F660461659AE49004262A0 /* SplashViewController.m */,
+				27410C581646347600A78604 /* ROOFViewController.h */,
+				27410C591646347600A78604 /* ROOFViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +316,11 @@
 				27410C4A1646347600A78604 /* main.m in Sources */,
 				27410C4E1646347600A78604 /* ROOFAppDelegate.m in Sources */,
 				27410C5A1646347600A78604 /* ROOFViewController.m in Sources */,
+				27F660471659AE49004262A0 /* SplashViewController.m in Sources */,
+				27F6604B1659B039004262A0 /* GameFactory.m in Sources */,
+				27F6604F1659B11B004262A0 /* SimonGame.m in Sources */,
+				27F660521659B33D004262A0 /* SimonViewController.m in Sources */,
+				27F660561659BE62004262A0 /* GameOverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +497,7 @@
 				27410C741646347600A78604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27410C751646347600A78604 /* Build configuration list for PBXNativeTarget "Simon Part DeuxTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +506,7 @@
 				27410C771646347600A78604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
